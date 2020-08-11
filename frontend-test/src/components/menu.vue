@@ -13,6 +13,7 @@ export default {
   name: "Menu",
   methods: {
     goto(route) {
+      if(window.location.pathname == route) return;
       this.$router.push({ path: route });
     },
   },
